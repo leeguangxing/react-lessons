@@ -225,6 +225,14 @@ pnpm add -D commitizen @commitlint/config-conventional @commitlint/cli -w
 ```
 可以看到，这里使用了 -w（--workspace-root）参数。因为 pnpm 默认会认为你不应该将依赖直接添加到 workspace 根目录，因为这样可能会导致依赖污染整个 monorepo 的结构。
 
+根目录添加 commitlint.config.js：
+```js
+export default {
+	extends: ['@commitlint/config-conventional'],
+}
+```
+> https://www.npmjs.com/package/@commitlint/config-conventional
+
 在 package.json 中添加如下内容：
 ```json
 {
