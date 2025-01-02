@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <button id="btn" style="background-color: red;">Inactive</button>
+    <script>
+      const btn = document.getElementById('btn');
+      let isActive = false;
+
+      btn.addEventListener('click', () => {
+        isActive = !isActive;
+        btn.style.backgroundColor = isActive ? 'green' : 'red';
+        btn.textContent = isActive ? 'Active' : 'Inactive';
+      });
+    </script>
+  </body>
+</html>
