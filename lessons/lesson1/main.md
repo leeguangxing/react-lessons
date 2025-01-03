@@ -88,7 +88,6 @@
  ![render](./images/render.jpg)
 
 
-xxxxxxxxxx import { createRoot } from 'mini-react-dom/client'​const element = document.createElement('div')element.innerText = 'Hello, Mini React DOM!'​createRoot(document.getElementById('root')!).render(element)ts
 - DOM、CSSOM 、执行脚本、滚动、触摸和其它交互操作都在主线程上执行。
 - 如果主线程忙于执行脚本或者渲染工作，那么就无法及时响应用户的交互操作。
 - 可以利用 Worker 线程来执行耗时的计算任务，以避免阻塞主线程。
